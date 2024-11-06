@@ -138,7 +138,7 @@
                             <div class="month-event">Desember 2024</div>
                             <div class="clock-event"><i class="fa-solid fa-clock"></i>09.00 WIB</div>
                             <i class="fa-solid fa-map-location-dot"></i>
-                            <div class="address-event">Gondang Desa Tulungrejo <br> Jl, Raya Junggo No.107, Kota Batu
+                            <div class="address-event">Aula Hotel Victory<br> Jl, Raya Junggo No.107, Kota Batu
                             </div>
                             <a class="map-event"><i class="fa-solid fa-location-dot"></i> Lihat Lokasi</a>
                         </div>
@@ -157,7 +157,7 @@
                             <div class="month-event">Desember 2024</div>
                             <div class="clock-event"><i class="fa-solid fa-clock"></i>13.00 - 20.00 WIB</div>
                             <i class="fa-solid fa-map-location-dot"></i>
-                            <div class="address-event">Gondang Desa Tulungrejo <br> Jl, Raya Junggo No.107, Kota Batu
+                            <div class="address-event">Aula Hotel Victory<br> Jl, Raya Junggo No.107, Kota Batu
                             </div>
                             <a class="map-event"><i class="fa-solid fa-location-dot"></i> Lihat Lokasi</a>
                         </div>
@@ -248,10 +248,67 @@
                 <div class="title-gift">Wedding Gift</div>
                 <div class="subtitle-gift">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika
                     memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi gift</div>
+                <div class="cta-gift">
+                    <i class="fa-solid fa-gift"></i>
+                    <span>Kirim Gift</span>
+                </div>
+                <div class="card-gift">
+                    <img src="LOGO-MANDIRI.png" alt="">
+                    <h1>Abdiel Fikrialdi</h1>
+                    <p>754801013759532</p>
+                    <div class="copy-id" onclick="copyRekening()">
+                        <i class="fa-regular fa-copy copy-satu" class="rekening"></i>
+                        <span class="copy-rekening">Salin No Rekening</span>
+                    </div>
+                    <h2>Kirim Kado Ke Alamat Berikut</h2>
+                    <h3>Jl. Raya junggo no.107, Gondang Desa Tulungrejo, Kota Batu</h3>
+                    <div class="copy-address" onclick="copyAlamat()">
+                        <i class="fa-regular fa-copy copy-dua"></i>
+                        <span class="copy-alamat">Salin Alamat</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pray">
+                <h1>Doa & Ucapan</h1>
             </div>
         </div>
     </main>
 
+
+    <script>
+        function copyRekening() {
+            var copyText = "754801013759532";
+
+            navigator.clipboard.writeText(copyText).then(function () {
+                var icon = document.querySelector(".copy-satu");
+                var text = document.querySelector(".copy-rekening");
+
+                icon.style.display = "none";
+                text.innerHTML = "Berhasil disalin";
+
+                setTimeout(function () {
+                    text.innerHTML = "Salin No Rekening";
+                    icon.style.display = "inline";
+                }, 1000);
+            });
+        }
+        function copyAlamat() {
+            var copyText = "Jl. Raya junggo no.107, Gondang Desa Tulungrejo, Kota Batu";
+
+            navigator.clipboard.writeText(copyText).then(function () {
+                var icon = document.querySelector(".copy-dua");
+                var text = document.querySelector(".copy-alamat");
+
+                icon.style.display = "none";
+                text.innerHTML = "Berhasil disalin";
+
+                setTimeout(function () {
+                    text.innerHTML = "Salin Alamat";
+                    icon.style.display = "inline";
+                }, 1000);
+            });
+        }
+    </script>
     <script>
         window.addEventListener("load", function () {
             const form = document.getElementById('my-form');
