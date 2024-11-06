@@ -200,7 +200,7 @@
                 <div class="space"></div>
                 <div class="title-galery">Wedding</div>
                 <div class="subtitle-galery">Gallery</div>
-                <video controls>
+                <video controls autoplay>
                     <source src="video.mp4" type="video/mp4">
                 </video>
                 <div class="image-galery">
@@ -253,7 +253,7 @@
                     <span>Kirim Gift</span>
                 </div>
                 <div class="card-gift">
-                    <img src="LOGO-MANDIRI.png" alt="">
+                    <img src="logo-bri.png" alt="">
                     <h1>Abdiel Fikrialdi</h1>
                     <p>754801013759532</p>
                     <div class="copy-id" onclick="copyRekening()">
@@ -270,11 +270,31 @@
             </div>
             <div class="pray">
                 <h1>Doa & Ucapan</h1>
+                <div id="kotakKomentar">
+                    <textarea id="inputKomentar"></textarea>
+                    <button id="tombolKirim">Kirim Komentar</button>
+                    <div id="daftarKomentar"></div>
+                </div>
             </div>
         </div>
     </main>
 
 
+    <script>
+        var tombolKirim = document.getElementById('tombolKirim');
+        var inputKomentar = document.getElementById('inputKomentar');
+        var daftarKomentar = document.getElementById('daftarKomentar');
+
+        tombolKirim.onclick = function () {
+            var paragraf = document.createElement('p');
+            var komentar = document.createTextNode(inputKomentar.value);
+
+            paragraf.appendChild(komentar);
+            daftarKomentar.appendChild(paragraf);
+
+            inputKomentar.value = '';
+        }
+    </script>
     <script>
         function copyRekening() {
             var copyText = "754801013759532";
