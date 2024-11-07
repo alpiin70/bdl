@@ -309,6 +309,25 @@
     </div>
 
     <script>
+        ctaGift = document.querySelector('.cta-gift');
+        cardGift = document.querySelector('.card-gift');
+
+        ctaGift.addEventListener("click", function () {
+            if (cardGift.classList.contains("showw")) {
+                cardGift.classList.remove("showw"); 
+                setTimeout(function () {
+                    cardGift.style.display = "none"; 
+                }, 500); 
+            } else {
+                cardGift.style.display = "flex";  
+                setTimeout(function () {
+                    cardGift.classList.add("showw");
+                }, 50); 
+            }
+        });
+
+    </script>
+    <script>
         function disableScrolling() {
             var x = window.scrollX;
             var y = window.scrollY;
@@ -353,21 +372,6 @@
                 audioIcon.classList.remove('fa-circle-stop')
             }
             isPlaying = !isPlaying;
-        }
-    </script>
-    <script>
-        var tombolKirim = document.getElementById('tombolKirim');
-        var inputKomentar = document.getElementById('inputKomentar');
-        var daftarKomentar = document.getElementById('daftarKomentar');
-
-        tombolKirim.onclick = function () {
-            var paragraf = document.createElement('p');
-            var komentar = document.createTextNode(inputKomentar.value);
-
-            paragraf.appendChild(komentar);
-            daftarKomentar.appendChild(paragraf);
-
-            inputKomentar.value = '';
         }
     </script>
     <script>
@@ -423,7 +427,7 @@
 
     </script>
     <script>
-        const endDate = new Date('2024-12-12T13:00:00'); // Ensure the time is set to 13:00 directly
+        const endDate = new Date('2024-12-12T13:00:00'); 
 
         endDate.setHours(13);
 
