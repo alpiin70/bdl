@@ -303,7 +303,7 @@
             <source src="lagu.mp3" type="audio/mp3">
         </audio>
 
-        <div class="audio-icon">
+        <div class="audio-icon-wrapper">
             <i class="fa-solid fa-compact-disc"></i>
         </div>
     </div>
@@ -317,9 +317,14 @@
 
         disableScrolling()
 
+        audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+        audioIcon = document.querySelector(".audio-icon-wrapper i");
+        let isPlaying = false
+        const song = document.querySelector("#song");
+
         function playAudio() {
-            const song = document.querySelector("#song");
             song.play()
+            isPlaying = true
         }
 
         const modal = document.getElementById("modal");
@@ -328,13 +333,27 @@
         button.addEventListener("click", function () {
 
             modal.classList.add("hidden");
-            playAudio()
+            playAudio();
 
             window.onscroll = function () { };
             setTimeout(function () {
                 modal.style.display = "none";
             }, 2500);
         });
+
+        audioIconWrapper.onclick = function () {
+            if (isPlaying) {
+                song.pause();
+                audioIcon.classList.remove('fa-compact-disc')
+                audioIcon.classList.add('fa-circle-stop')
+            }
+            else {
+                song.play();
+                audioIcon.classList.add('fa-compact-disc')
+                audioIcon.classList.remove('fa-circle-stop')
+            }
+            isPlaying = !isPlaying;
+        }
     </script>
     <script>
         var tombolKirim = document.getElementById('tombolKirim');
