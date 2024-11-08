@@ -223,7 +223,7 @@ main {
     background-color: #5C3324;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -235,13 +235,13 @@ main {
     font-weight: 400;
 }
 
-.flex h1:last-child{
+.flex h1:last-child {
     padding-right: .5rem;
 }
 
 .first span {
     font-size: 3.5rem;
-    padding: 0 10px 0 10px;
+    padding: 0 7px 0 7px;
 }
 
 .first .first-p {
@@ -566,6 +566,7 @@ main {
     font-weight: 600;
     font-family: 'brilon', sans-serif;
     overflow-y: hidden;
+    counter-reset: count 0; 
 }
 
 .month-event {
@@ -934,7 +935,7 @@ form {
     color: #393939;
 }
 
-.cta-gift i{
+.cta-gift i {
     overflow-y: hidden;
 }
 
@@ -956,15 +957,16 @@ form {
     color: #363636;
     margin: 2rem 0;
     transform: scale(0);
-    opacity: 0;  
+    opacity: 0;
     transition: transform 2.5s ease, opacity 0.5s ease;
 }
 
 .card-gift.showw {
-    display: flex;  
-    transform: scale(100%); 
-    opacity: 1; 
+    display: flex;
+    transform: scale(100%);
+    opacity: 1;
 }
+
 .card-gift img {
     width: 60%;
 }
