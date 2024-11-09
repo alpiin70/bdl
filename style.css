@@ -8,7 +8,9 @@
     src: url(font/Creattion\ Demo.otf);
 }
 
-*, html, body {
+*,
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,12 +49,12 @@ main {
     display: block;
     justify-content: center;
     align-items: center;
-    background-image: url(https://placehold.co/600x900);
+    background-image: url(bdl/non_edit/IMG_9304.JPG);
     width: 100%;
     max-width: 605px;
     height: 100vh;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     z-index: 999;
     transform: translateY(0);
     transition: transform 2.5s ease;
@@ -89,7 +91,7 @@ main {
 }
 
 .content p {
-    margin-top: 5rem;
+    margin-top: 3rem;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
 }
@@ -207,7 +209,7 @@ main {
     max-width: 605px;
     aspect-ratio: 1 / .9;
     object-fit: cover;
-    object-position: top;
+    object-position: 50% 30%;
     margin: 0 10px;
 }
 
@@ -300,9 +302,9 @@ main {
     border-radius: 100px 100px 0 0;
     width: 62%;
     max-width: 76%;
-    background-image: url(https://placehold.co/600x400);
+    background-image: url(bdl/non_edit/IMG_9204.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 30%;
 }
 
 .card-man {
@@ -312,9 +314,9 @@ main {
     border-radius: 100px 100px 0 0;
     width: 62%;
     max-width: 76%;
-    background-image: url(https://placehold.co/600x300);
+    background-image: url(bdl/non_edit/IMG_9231.JPG);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 30%;
 }
 
 .card-name {
@@ -368,7 +370,8 @@ main {
     transition: all .3s;
 }
 
-.instagram i:hover, i:active {
+.instagram i:hover,
+i:active {
     background-color: #444;
     color: white;
 }
@@ -391,7 +394,7 @@ main {
     width: 100%;
     max-width: 605px;
     height: 24rem;
-    color: #1B1A1A;
+    color: #fff;
 }
 
 .img-countdown {
@@ -402,7 +405,8 @@ main {
     max-width: 605px;
     height: 24rem;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 50%;
+    filter: blur(.2rem);
 }
 
 .second-gradient {
@@ -411,7 +415,7 @@ main {
     max-width: 605px;
     height: 24rem;
     position: absolute;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, .3), rgb(255, 255, 255));
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, .1), rgb(255, 255, 255) 150%);
 }
 
 .countdown-title {
@@ -430,10 +434,10 @@ main {
     font-family: 'creattion', sans-serif;
     font-style: italic;
     font-weight: 300;
-    margin-top: 3.8rem;
+    margin-top: 4.2rem;
     width: 195px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .countdown-date {
@@ -447,7 +451,7 @@ main {
 
 .fourth-divider {
     position: absolute;
-    border-top: 1.5px solid #1B1A1A;
+    border-top: 1.5px solid #fff;
     width: 70%;
     max-width: 415px;
     margin-top: 10rem;
@@ -462,11 +466,14 @@ main {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #363636;
+    color: #fff;
     margin-top: 12rem;
 }
 
-#days, #hours, #minutes, #seconds {
+#days,
+#hours,
+#minutes,
+#seconds {
     font-size: 18px;
 }
 
@@ -494,8 +501,9 @@ main {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     padding: 0.1rem .5rem 0.1rem .5rem;
-    border: 1.5px solid #363636;
+    border: 1.5px solid #fff;
     font-weight: 300;
+
 }
 
 .event {
@@ -528,7 +536,7 @@ main {
 .img-event img {
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 .container-detail-event {
@@ -566,7 +574,7 @@ main {
     font-weight: 600;
     font-family: 'brilon', sans-serif;
     overflow-y: hidden;
-    counter-reset: count 0; 
+    counter-reset: count 0;
 }
 
 .month-event {
@@ -732,7 +740,19 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: 50% 100%;
+}
+
+.story-dua img {
+    object-position: 46% 100%;
+}
+
+.story-tiga img {
+    object-position: 46% 100%;
+}
+
+.story-empat img {
+    object-position: 53% 100%;
 }
 
 .date-story {
@@ -849,7 +869,8 @@ form {
     outline: none;
 }
 
-.form-group input, .form-group select {
+.form-group input,
+.form-group select {
     width: 100%;
     padding: 10px;
     border: 0px solid #ccc;
