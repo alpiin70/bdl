@@ -128,6 +128,7 @@ main {
     width: 100%;
     max-width: 605px;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .main-image {
