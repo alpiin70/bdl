@@ -17,6 +17,10 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-color: #f1f1f1;
     display: flex;
@@ -821,6 +825,14 @@ video {
     object-fit: cover;
 }
 
+.img-galery {
+    object-position: top;
+}
+
+.img-galeryy {
+    object-position: 50% 90%;
+}
+
 .rsvp {
     width: 100%;
     display: flex;
@@ -1065,14 +1077,30 @@ form {
     position: relative;
 }
 
-.footer img {
+.image-footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.img-footer {
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+}
+
+.img-footer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    position: relative;
-    top: 0;
-    left: 0;
+    object-position: bottom;
+}
+
+.img-footer img:last-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 45% 50%;
 }
 
 .decoration {
