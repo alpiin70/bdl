@@ -27,7 +27,7 @@
 <body>
     <main>
         <div class="container">
-            <div class="modal" id="modal" style="display: none;">
+            <div class="modal" id="modal">
                 <div class="content">
                     <div>
                         <p>The Wedding Of</p>
@@ -385,13 +385,13 @@
 
     </script>
     <script>
-        // function disableScrolling() {
-        //     var x = window.scrollX;
-        //     var y = window.scrollY;
-        //     window.onscroll = function () { window.scrollTo(x, y); };
-        // }
+        function disableScrolling() {
+            var x = window.scrollX;
+            var y = window.scrollY;
+            window.onscroll = function () { window.scrollTo(x, y); };
+        }
 
-        // disableScrolling()
+        disableScrolling()
 
         audioIconWrapper = document.querySelector(".audio-icon-wrapper");
         audioIcon = document.querySelector(".audio-icon-wrapper i");
