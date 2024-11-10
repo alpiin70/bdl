@@ -34,7 +34,8 @@
                         <h1>Aldi & Kiki</h1>
                     </div>
                     <div>
-                        <h3>Kpd Bpk/Ibu/Saudara/i</h3>
+                        <h3>Kpd Yth:</h3>
+                        <span class="yth"></span>
                         <button id="open-invitation-btn">
                             <i class="fa-regular fa-envelope-open"></i>
                             Buka Undangan
@@ -82,7 +83,7 @@
                 <div class="second-divider"></div>
                 <p class="third-p">Bride & Groom</p>
                 <p class="fourth-p" data-aos="zoom-in" data-aos-duration="1000">Tanpa mengurangi rasa hormat, kami
-                    bermaksud mengundang Bapak/Ibu/Saudara/I untuk
+                    bermaksud mengundang Yth <span class="yth2"></span> untuk
                     menghadiri acara pernikahan kami :</p>
             </div>
             <div class="card">
@@ -364,6 +365,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama = urlParams.get('to')
+        console.log(nama);
+
+        const yth = document.querySelector('.yth');
+        const yth2 = document.querySelector('.yth2');
+        yth.innerHTML = nama;
+        yth2.innerHTML = nama;
     </script>
     <script>
         ctaGift = document.querySelector('.cta-gift');

@@ -92,7 +92,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .content p {
@@ -108,9 +108,17 @@ main {
 }
 
 .content h3 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
+}
+
+.content .yth{
+    font-family: 'brilon', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
 .modal button {
@@ -285,6 +293,14 @@ main {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 20px;
+}
+
+.fourth-p .yth2{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    text-transform: capitalize;
 }
 
 .card {
